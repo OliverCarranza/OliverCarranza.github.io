@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Net</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header>
+        <img src="resources/images/PhonNet.png" alt="banner" id="bannerImg">
+            <nav class="flex-container">
+                <div>
+                    <a href="index.html">Home</a>
+                </div>
+                <div>
+                    <a href="phones.html">Telephones</a>
+                </div>
+                <div>
+                    <a href="television.html">Televisions</a>
+                </div>
+                <div>
+                    <a href="about.html">About Phon</a>
+                </div>
+                <div>
+                    <a href="contact.html">Connect with Me!</a>
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+        <form id="myForm" method="post">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" placeholder="Your Name">
+          <br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="youremail@example.com">
+          <br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here"></textarea>
+          <br>
+          <input type="submit" value="Send Message" id="submit">
+        </form>
+    </main>
+    
+    <footer>
+        &#169; 2021-2024 All Rights Reserved | Oliver Carranza <a href="mailto:olivercarranza05@gmail.com" id="emailLink">email</a>
+    </footer>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
