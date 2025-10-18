@@ -1,474 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name for Wisconsin Governor | A Centrist Vision for Our Future</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles and color definitions */
+        :root {
+            --wisconsin-green: #155724; /* A deep, professional green */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .bg-green-primary { background-color: var(--wisconsin-green); }
+        .text-green-primary { color: var(--wisconsin-green); }
+        .border-green-primary { border-color: var(--wisconsin-green); }
+        .hover\:bg-green-primary:hover { background-color: var(--wisconsin-green); }
+        .hover\:text-green-primary:hover { color: var(--wisconsin-green); }
+        .accent-green-primary { accent-color: var(--wisconsin-green); }
+        .outline-green-primary:focus { outline-color: var(--wisconsin-green); }
+        .ring-green-primary:focus { ring-color: var(--wisconsin-green); }
+        .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+        .text-shadow-sm { text-shadow: 0 1px 2px rgba(0,0,0,0.5); }
+    </style>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Oliver Carranza</title>
-    <meta name="description" content="Core HTML Project">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1Z4S5M2NK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/select2/select2.min.css">
-    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
-
-    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-
+      gtag('config', 'G-Q1Z4S5M2NK');
+    </script>
 </head>
-<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
-	<div class="boxed-page">
-		<nav id="gtco-header-navbar" class="navbar navbar-expand-lg py-4">
-    <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="/">
-            <span class="lnr"></span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="lnr lnr-menu"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar-nav-header">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#blog">Blog</a>
-                </li> -->
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="single.html">Portfolio</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Me</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-</nav>		<div class="jumbotron d-flex align-items-center" style="background-image: url(img/hero-2.jpg)">
-  <div class="container text-center">
-    <div class="introT">
-    <h1 class="display-2 mb-4">Hello, you!</h1>
-    </div>
-    <div class="introT">
-        <p>
-            I'm Oliver Carranza and I made this website.
-        </p>
-    </div>
-  </div>
-</div>		<section id="gtco-who-we-are" class="bg-white">
-    <div class="container">
-        <div class="section-content">
-            <div class="title-wrap">
-                <h2 class="section-title">Undegraduate Student at UW-Madison</h2>
-                <p class="section-sub-title"></p>
-            </div>
-            
-            <!--<div class="row text-center">
-                <div class="col-md-4 col-sm-6 ">
-                    <img class="rounded-circle" src="icons/animat-checkmark.gif" alt="Generic placeholder image" width="140" height="140">
-                    <h5 class="mb-4">Simple and Clean</h5>
-                    <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-link" href="#" role="button">View details</a></p>
-                </div>
-                 /.col-md-4 col-sm-6  
-                <div class="col-md-4 col-sm-6 ">
-                    <img class="rounded-circle" src="icons/animat-customize.gif" alt="Generic placeholder image" width="140" height="140">
-                    <h5 class="mb-4">Easy to Customize</h5>
-                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vestibulum id ligula porta felis.</p>
-                    <p><a class="btn btn-link" href="#" role="button">View details</a></p>
-                </div>
-                 /.col-md-4 col-sm-6  
-                <div class="col-md-4 col-sm-6 ">
-                    <img class="rounded-circle" src="icons/animat-responsive.gif" alt="Generic placeholder image" width="140" height="140">
-                    <h5 class="mb-4">Fully Responsive</h5>
-                    <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. </p>
-                    <p><a class="btn btn-link" href="#" role="button">View details</a></p>
-                </div>
-                 /.col-md-4 col-sm-6  
-            </div>
-             /.row -->
-        </div>
-    </div>
-</section>		<!-- Counter Section -->
-<section id="gtco-counter" class="overlay bg-fixed">
-    <div class="container">
-        <div class="section-content">
-            <div class="row">
-                <!-- Counter Item -->
-                <div class="col-md-3 col-sm-6 counter-item">
-                    <i class="lnr lnr-users"></i>
-                    <span class="number" data-from="0" data-to="34" data-refresh-interval="100">14</span>
-                    <h4>Clients</h4>
-                </div>
-                <!-- End of Counter Item -->
-                <!-- Counter Item -->
-                <div class="col-md-3 col-sm-6 counter-item">
-                    <i class="lnr lnr-briefcase"></i>
-                    <span class="number" data-from="0" data-to="32" data-refresh-interval="100">4</span>
-                    <h4>Jobs</h4>
-                </div>
-                <!-- End of Counter Item -->
-                <!-- Counter Item -->
-                <div class="col-md-3 col-sm-6 counter-item">
-                    <i class="lnr lnr-heart"></i>
-                    <span class="number" data-from="0" data-to="38" data-refresh-interval="100">46</span>
-                    <h4>hours of volunteer work</h4>
-                </div>
-                <!-- End of Counter Item -->
-                <!-- Counter Item -->
-                <div class="col-md-3 col-sm-6 counter-item">
-                    <i class="lnr lnr-rocket"></i>
-                    <span class="number" data-from="0" data-to="29" data-refresh-interval="100">1</span>
-                    <h4>Certificate</h4>
-                </div>
-                <!-- End of Counter Item -->
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Counter Section -->		<!-- Features Section-->
-<section id="gtco-features" class="bg-white">
-    <div class="container">
-        <div class="section-content">
-            <!-- Section Title -->
-            <div class="title-wrap">
-                <h2 class="section-title">
-                    Skills
-                </h2>
-                <p class="section-sub-title">My best languages that I have a good understanding of and some important skills that I have developed</p>
-            </div>
-            <!-- End of Section Title -->
-            <div class="row">
-                <!-- Features Holder-->
-                <div class="col-md-12 features-holder">
-                    <div class="row">
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-6 feature-item item mb-3 mb-3 text-center">
-                            <div class="my-4">
-                                <i class="lnr lnr-cog fs-40"></i>
-                            </div>
-                            <h4>Java</h4>
-                            <p>I have an intermediete knowledge of the Java language</p>
-                        </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                            <div class="my-4">
-                                <i class="lnr lnr-frame-contract fs-40"></i>
-                            </div>
-                            <h4>Multi-Tasking</h4>
-                            <p>I have juggled rigorous education while working part-time.</p>
-                        </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                            <div class="my-4">
-                                <i class="lnr lnr-bubble fs-40"></i>
-                            </div>
-                            <h4>Costumer Service</h4>
-                            <p>3 years of customer service experience with the public</p>
-                        </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                            <div class="my-4">
-                                <i class="lnr lnr-magic-wand fs-40"></i>
-                            </div>
-                            <h4>Video Production</h4>
-                            <p>5 years of managing a live stream production</p>
-                        </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                            <div class="my-4">
-                                <i class="lnr lnr-clock fs-40"></i>
-                            </div>
-                            <h4>Leadership</h4>
-                            <p>Led multiple projects and teams over the years to success</p>
-                        </div>
-                        <!-- End of Feature Item -->
-                        <!-- Features Item -->
-                        <div class="col-md-4 col-sm-6 feature-item item mb-3 text-center">
-                            <div class="my-4">
-                                <i class="lnr lnr-thumbs-up fs-40"></i>
-                            </div>
-                            <h4>Worksmanship</h4>
-                            <p>I pride myself in my work and always hope to deliver the best-quality work I can</p>
-                        </div>
-                        <!-- End of Feature Item -->
-                    </div>
-                </div>
-                <!-- End of Features Holder-->
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End of Features Section-->		<section id="gtco-section-featurettes" class="featurettes bg-white">
+<body class="bg-gray-50 text-gray-800">
 
-    <div class="container">
-        <div class="section-content">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <!-- Section Title -->
-                    <div class="title-wrap">
-                        <h2 class="section-title">
-                            <b>My Best</b> Projects <br> Over The Years
-                        </h2>
-                        <p class="section-sub-title">
-                           Showcasing all of my best projects that I am most proud of.
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold bg-green-primary text-white px-3 py-1 rounded-md">[Your Name]</a>
+            
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#about" class="text-gray-600 hover:text-green-primary transition duration-300">About</a>
+                <a href="#issues" class="text-gray-600 hover:text-green-primary transition duration-300">The Issues</a>
+                <a href="#events" class="text-gray-600 hover:text-green-primary transition duration-300">Events</a>
+                <a href="#join" class="text-gray-600 hover:text-green-primary transition duration-300">Get Involved</a>
+                <a href="resume.html" class="font-semibold text-green-primary hover:underline transition duration-300">Developer Portfolio</a>
+            </div>
+
+            <a href="#donate" class="hidden md:block bg-green-primary text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-opacity-90 transition duration-300">Donate</a>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block text-gray-600 hover:text-green-primary transition duration-300">About</a>
+            <a href="#issues" class="block text-gray-600 hover:text-green-primary transition duration-300">The Issues</a>
+            <a href="#events" class="block text-gray-600 hover:text-green-primary transition duration-300">Events</a>
+            <a href="#join" class="block text-gray-600 hover:text-green-primary transition duration-300">Get Involved</a>
+            <a href="Oliver.html" class="block text-gray-600 hover:text-green-primary transition duration-300 font-semibold">Developer Portfolio</a>
+            <a href="#donate" class="block bg-green-primary text-white font-bold mt-2 text-center py-2 px-4 rounded-lg shadow-md hover:bg-opacity-90 transition duration-300">Donate</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative text-white min-h-[60vh] md:min-h-[80vh] flex items-center bg-gray-800">
+            <div class="absolute inset-0">
+                 <!-- Placeholder for a high-quality photo of the Wisconsin landscape or the candidate -->
+                <img src="https://placehold.co/1920x1080/155724/FFFFFF?text=Proudly+Wisconsin" alt="Wisconsin landscape" class="w-full h-full object-cover opacity-30">
+            </div>
+            <div class="relative container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-shadow">A Common Ground for Wisconsin's Future</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-shadow-sm">I'm running for Governor to listen, to unite, and to put people over politics. It's time for common-sense solutions that work for all of us.</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="#join" class="bg-green-primary text-white font-bold py-3 px-8 rounded-lg shadow-xl hover:bg-opacity-90 transition duration-300 transform hover:scale-105">Join the Movement</a>
+                    <a href="#issues" class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-lg shadow-xl hover:bg-white hover:text-green-primary transition duration-300 transform hover:scale-105">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-5 gap-12 items-center">
+                    <div class="md:col-span-2">
+                        <!-- Placeholder for a professional headshot of the candidate -->
+                        <img src="https://placehold.co/600x750/e2e8f0/333333?text=Your+Photo+Here" alt="Candidate Name" class="rounded-xl shadow-2xl w-full">
+                    </div>
+                    <div class="md:col-span-3">
+                        <h2 class="text-3xl font-bold text-green-primary mb-4">A Governor for All of Wisconsin</h2>
+                        <p class="text-lg text-gray-700 mb-4">
+                            Are you tired of politicians who seem more interested in fighting each other than in fighting for you? I know I am. I’m not a career politician. I’m a neighbor, a parent, and a small business owner who has seen the promise of Wisconsin get buried under partisan gridlock.
                         </p>
-                    </div>
-                    <!-- End of Section Title -->
-
-                    <div class="featurettes-wrap text-left mb-4">
-
-                        <div class="row featurettes-item">
-
-                            <div class="col-md-4 offset-md-2 col-sm-6">
-                                <div class="my-5">
-                                    <span class="lnr lnr-earth fs-40 color-primary"></span>
-                                </div>
-                                <h4 class="mb-4">Ultimate TicTacToe</h4>
-                                <p>Terminal Version of Ultimate TicTacToe.</p>
-                                <p>LINK TO THE GITHUB</p>
-                            </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
-
-                            <div class="col-md-4 offset-md-right-2 col-sm-6">
-                                <img class="my-5" src="img/app-profile-mockup.png" alt="">
-                            </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
-
-                        </div><!--/ .featurettes-item -->
-
-                    </div><!--/ .featurettes-wrap -->
-
-                    <div class="featurettes-wrap text-left">
-
-                        <div class="row featurettes-item">
-
-                            <div class="col-md-4 offset-md-2 col-sm-6">
-                                <img class="my-4" src="img/app-chat-mockup.png" alt="">
-                            </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
-
-                            <div class="col-md-4 offset-md-right-2 col-sm-6 mb-5">
-                                <div class="my-4">
-                                    <span class="lnr lnr-bubble fs-40 color-primary"></span>
-                                </div>
-                                <h4 class="mb-4">Ratd</h4>
-                                <p>My upcoming project called Ratr</p>
-                            </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
-
-                        </div><!--/ .featurettes-item -->
-
-                    </div><!--/ .featurettes-wrap -->
-
-                    <!-- <div class="featurettes-wrap text-left">
-
-                        <div class="row featurettes-item">
-
-                            <div class="col-md-4 offset-md-2 col-sm-6 offset-sm-0">
-                                <h4 class="mb-4">Ready to join our App for your advance social experience?</h4>
-                                <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet.</p>
-                            </div> .col-md-4.col-md-offset-2.col-sm-6 -->
-
-                           <!-- <div class="col-md-4 offset-md-right-2 col-sm-6 text-center">
-                                <a href="#0"><img class="btn-img my-4" src="img/appstore-btn.png" alt=""></a>
-                                <a href="#0"><img class="btn-img" src="img/playstore-btn.png" alt=""></a>
-                            </div> .col-md-4.col-md-offset-right-2.col-sm-6 -->
-
-                        <!--</div> .featurettes-item -->
-
-                    <!--</div> .featurettes-wrap -->
-
-                </div><!--/ .col-md-12 -->
-
-            </div><!--/ .row -->
-        </div>
-    </div><!--/ .container -->
-
-</section>		<!-- Blog Section -->
-<!-- <section id="gtco-blog" class="bg-grey">
-    <div class="container">
-        <div class="section-content">
-            <div class="title-wrap mb-5">
-                <h2 class="section-title">Latest <b>blog articles</b></h2>
-                <p class="section-sub-title">My three latest articles ranging from a experience that I had, to a project that I completed.</p>
-            </div>
-            <div class="row">
-                <!-- Blog 
-                <div class="col-md-12 blog-holder" id="articleShowcase" >
-                    <div class="row">
-                         Blog Item 
-                        <div class="col-md-4 blog-item-wrapper">
-                            <div class="blog-item">
-                                <div class="blog-img">
-                                    <a href="single.html"><img src="img/blog-1.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-text">
-                                    <div class="blog-tag">
-                                        <a href="#"><h6><small>CODE</small></h6></a>
-                                    </div>
-                                    <div class="blog-title">
-                                        <a href="single.html"><h4>Amazing Blog Title</h4></a>
-                                    </div>
-                                    <div class="blog-meta">
-                                        <p class="blog-date">30 May 2016</p> /
-                                        <p class="blog-comment"><a href="">23 Comments</a></p>
-                                    </div>
-                                    <div class="blog-desc">
-                                        <p>Lorem ipsum dolor sit amet con sectetur adipiscing elit sed do eiu smod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                    <div class="blog-author">
-                                        <p>by John Doe</p>
-                                    </div>
-                                    <div class="blog-share-wrapper">
-                                        <a class="blog-share" href="google.com">
-                                            <i class="fab fa-facebook-square"></i>
-                                        </a>
-                                        <a class="blog-share" href="google.com">
-                                            <i class="fab fa-twitter-square"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         End of Blog Item 
-                         Blog Item 
-                        <div class="col-md-4 blog-item-wrapper">
-                            <div class="blog-item">
-                                <div class="blog-img">
-                                    <a href="#"><img src="img/blog-2.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-text">
-                                    <div class="blog-tag">
-                                        <a href="#"><h6><small>SPORTS</small></h6></a>
-                                    </div>
-                                    <div class="blog-title">
-                                        <a href="#"><h4>Amazing Blog Title</h4></a>
-                                    </div>
-                                    <div class="blog-meta">
-                                        <p class="blog-date">30 May 2016</p> /
-                                        <p class="blog-comment"><a href="">23 Comments</a></p>
-                                    </div>
-                                    <div class="blog-desc">
-                                        <p>Lorem ipsum dolor sit amet con sectetur adipiscing elit sed do eiu smod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                    <div class="blog-author">
-                                        <p>by John Doe</p>
-                                    </div>
-                                    <div class="blog-share-wrapper">
-                                        <a class="blog-share" href="google.com">
-                                            <i class="fab fa-facebook-square"></i>
-                                        </a>
-                                        <a class="blog-share" href="google.com">
-                                            <i class="fab fa-twitter-square"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         End of Blog Item 
-                         Blog Item 
-                        <div class="col-md-4 blog-item-wrapper">
-                            <div class="blog-item">
-                                <div class="blog-img">
-                                    <a href="#"><img src="img/blog-3.jpg" alt=""></a>
-                                </div>
-                                <div class="blog-text">
-                                    <div class="blog-tag">
-                                        <a href="#"><h6><small>ECONOMY</small></h6></a>
-                                    </div>
-                                    <div class="blog-title">
-                                        <a href="#"><h4>Amazing Blog Title</h4></a>
-                                    </div>
-                                    <div class="blog-meta">
-                                        <p class="blog-date">30 May 2016</p> /
-                                        <p class="blog-comment"><a href="">23 Comments</a></p>
-                                    </div>
-                                    <div class="blog-desc">
-                                        <p>Lorem ipsum dolor sit amet con sectetur adipiscing elit sed do eiu smod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                    <div class="blog-author">
-                                        <p>by John Doe</p>
-                                    </div>
-                                    <div class="blog-share-wrapper">
-                                        <a class="blog-share" href="google.com">
-                                            <i class="fab fa-facebook-square"></i>
-                                        </a>
-                                        <a class="blog-share" href="google.com">
-                                            <i class="fab fa-twitter-square"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         End of Blog Item
+                        <p class="text-gray-600 mb-4">
+                            I’m running for Governor to change that. My pledge is simple: to be a leader for everyone, regardless of their zip code or who they voted for in the last election. This campaign is about replacing division with dialogue, restoring common sense, and ensuring your voice is heard in Madison. It’s time for a government that works for the people again.
+                        </p>
+                        <a href="#issues" class="text-green-primary font-semibold hover:underline">See where I stand on the issues &rarr;</a>
                     </div>
                 </div>
-                 End of Blog
+            </div>
+        </section>
+
+        <!-- Issues Section -->
+        <section id="issues" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-green-primary mb-2">My Platform for Wisconsin</h2>
+                <p class="max-w-2xl mx-auto text-gray-600 mb-12">Practical policies for a prosperous and united state.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Issue Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-left transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-xl font-bold text-green-primary mb-3">Economic Growth & Job Creation</h3>
+                        <p class="text-gray-600">Championing small businesses, investing in modern manufacturing, and cutting red tape to make Wisconsin the best place to work and build a future.</p>
+                    </div>
+                    <!-- Issue Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-left transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-xl font-bold text-green-primary mb-3">Affordable Healthcare</h3>
+                        <p class="text-gray-600">Working to lower prescription drug costs, protect rural hospitals, and ensure every Wisconsinite has access to quality, affordable healthcare.</p>
+                    </div>
+                    <!-- Issue Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-left transform hover:-translate-y-2 transition duration-300">
+                        <h3 class="text-xl font-bold text-green-primary mb-3">Education Excellence</h3>
+                        <p class="text-gray-600">Investing in our public schools, supporting our teachers, and expanding access to technical education to prepare our kids for the jobs of tomorrow.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Media Section -->
+        <section id="media" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-green-primary mb-12 text-center">On the Campaign Trail</h2>
+                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Placeholder images for media appearances, community events, etc. -->
+                    <img src="https://placehold.co/600x400/e2e8f0/333333?text=Event+Photo+1" class="rounded-lg shadow-md aspect-video object-cover" alt="Campaign Event 1">
+                    <img src="https://placehold.co/600x400/e2e8f0/333333?text=Event+Photo+2" class="rounded-lg shadow-md aspect-video object-cover" alt="Campaign Event 2">
+                    <img src="https://placehold.co/600x400/e2e8f0/333333?text=Event+Photo+3" class="rounded-lg shadow-md aspect-video object-cover" alt="Campaign Event 3">
+                    <img src="https://placehold.co/600x400/e2e8f0/333333?text=Event+Photo+4" class="rounded-lg shadow-md aspect-video object-cover" alt="Campaign Event 4">
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events" class="py-20 bg-green-primary text-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">Upcoming Events</h2>
+                <p class="mb-8">Join us and be part of the change.</p>
+                <div class="bg-white/10 backdrop-blur-sm p-8 rounded-xl max-w-4xl mx-auto shadow-lg">
+                    <h3 class="text-2xl font-bold mb-2">Town Hall in Green Bay</h3>
+                    <p class="text-lg mb-6">Hear from me directly and ask your questions about the future of Wisconsin.</p>
+                    <div id="countdown" class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+                        <div><div id="days" class="text-4xl font-bold">00</div><div class="text-sm uppercase">Days</div></div>
+                        <div><div id="hours" class="text-4xl font-bold">00</div><div class="text-sm uppercase">Hours</div></div>
+                        <div><div id="minutes" class="text-4xl font-bold">00</div><div class="text-sm uppercase">Minutes</div></div>
+                        <div><div id="seconds" class="text-4xl font-bold">00</div><div class="text-sm uppercase">Seconds</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Involved (Join) Section -->
+        <section id="join" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                 <div class="bg-white rounded-xl shadow-xl overflow-hidden lg:grid lg:grid-cols-2">
+                    <div class="p-8 lg:p-12">
+                        <h2 class="text-3xl font-bold text-green-primary">Join the Movement</h2>
+                        <p class="mt-4 text-lg text-gray-600">Sign up for campaign updates, volunteer opportunities, and news. Your support makes all the difference.</p>
+                        <form id="signup-form" class="mt-8 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+                            <div>
+                                <label for="first-name" class="sr-only">First name</label>
+                                <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-green-primary focus:ring-green-primary" placeholder="First name">
+                            </div>
+                            <div>
+                                <label for="last-name" class="sr-only">Last name</label>
+                                <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-green-primary focus:ring-green-primary" placeholder="Last name">
+                            </div>
+                            <div class="sm:col-span-2">
+                                <label for="email" class="sr-only">Email</label>
+                                <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-gray-300 py-3 px-4 shadow-sm focus:border-green-primary focus:ring-green-primary" placeholder="Email address" required>
+                            </div>
+                            <div class="sm:col-span-2">
+                                <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-green-primary hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-primary">Let's Go</button>
+                            </div>
+                        </form>
+                        <p id="form-success-message" class="hidden mt-4 text-center text-green-primary font-semibold">Thank you! We've received your submission.</p>
+                    </div>
+                    <div class="hidden lg:block aspect-w-16 aspect-h-9">
+                        <img class="object-cover w-full h-full" src="https://placehold.co/800x1000/e2e8f0/333333?text=Volunteer+With+Us" alt="Campaign volunteers">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Donate Section -->
+        <section id="donate" class="bg-white py-20">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <h2 class="text-3xl font-bold text-green-primary">Power Our Campaign</h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    This campaign is powered by people like you. Every contribution, big or small, helps us reach more voters and bring our common-sense message to every corner of Wisconsin.
+                </p>
+                <div class="mt-8 flex justify-center">
+                    <a href="#" class="inline-block bg-green-primary text-white font-bold text-lg py-4 px-10 rounded-lg shadow-lg hover:bg-opacity-90 transition duration-300 transform hover:scale-105">Donate Now</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto py-12 px-6">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold bg-white text-green-primary px-3 py-1 rounded-md">YOUR NAME for Wisconsin</a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold uppercase">Quick Links</h2>
+                        <ul class="text-gray-400">
+                            <li class="mb-4"><a href="#about" class="hover:underline">About</a></li>
+                            <li><a href="#issues" class="hover:underline">Issues</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold uppercase">Follow us</h2>
+                        <ul class="text-gray-400">
+                            <li class="mb-4"><a href="#" class="hover:underline ">Facebook</a></li>
+                            <li><a href="#" class="hover:underline">Twitter (X)</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold uppercase">Get Involved</h2>
+                        <ul class="text-gray-400">
+                            <li class="mb-4"><a href="#join" class="hover:underline">Volunteer</a></li>
+                            <li><a href="#donate" class="hover:underline">Donate</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-400 sm:text-center">Paid for by the Committee to Elect [Your Name]
+                </span>
+                <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                    <!-- Social Icons (Placeholders) -->
+                    <a href="#" class="text-gray-400 hover:text-white"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
+                </div>
             </div>
         </div>
-    </div>
-</section> -->
-<!-- End of Blog Section -->		<!-- Portfolio Section -->
+    </footer>
 
-<footer class="mastfoot mb-3 bg-white py-4 border-top">
-    <div class="inner container">
-         <div class="row">
-         	<div class="col-md-6 d-flex align-items-center justify-content-md-start justify-content-center">
-                <p class="mb-0">&copy; 2024 Oliver Carranza. All Rights Reserved.</p>
-         	</div>
-           
-            <div class="col-md-6">
-            	<nav class="nav nav-mastfoot justify-content-md-end justify-content-center">
-	                <a class="nav-link" href="#">
-	                	<i class="icon-facebook"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="icon-twitter"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="icon-instagram"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="icon-linkedin"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="icon-youtube"></i>
-	                </a>
-	                <a class="nav-link" href="#">
-	                	<i class="icon-pinterest"></i>
-	                </a>
-	            </nav>
-            </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Event Countdown Timer
+        // Set the date we're counting down to (Year, Month (0-11), Day, Hour, Minute, Second)
+        const countdownDate = new Date("2025-11-04T19:00:00").getTime();
+
+        const countdownFunction = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the elements
+            document.getElementById("days").innerText = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerText = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerText = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerText = seconds.toString().padStart(2, '0');
+
+            // If the count down is finished, write some text 
+            if (distance < 0) {
+                clearInterval(countdownFunction);
+                document.getElementById("countdown").innerHTML = "<div class='col-span-4 text-xl'>The Event has Started!</div>";
+            }
+        }, 1000);
+
+        // Form Submission Message
+        const signupForm = document.getElementById('signup-form');
+        const successMessage = document.getElementById('form-success-message');
+
+        signupForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission
             
-        </div>
-    </div>
-</footer>	</div>
-	
-</div>
-	<!-- External JS -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-	<script src="vendor/bootstrap/popper.min.js"></script>
-	<script src="vendor/bootstrap/bootstrap.min.js"></script>
-	<script src="vendor/select2/select2.min.js "></script>
-	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
-	<script src="vendor/isotope/isotope.min.js"></script>
-	<script src="vendor/lightcase/lightcase.js"></script>
-	<script src="vendor/waypoints/waypoint.min.js"></script>
-	<script src="vendor/countTo/jquery.countTo.js"></script>
+            // Basic validation check
+            const emailInput = document.getElementById('email');
+            if (emailInput.value && emailInput.checkValidity()) {
+                 // Hide form and show success message
+                signupForm.reset();
+                successMessage.classList.remove('hidden');
+    
+                // Optional: Hide the success message after a few seconds
+                setTimeout(() => {
+                    successMessage.classList.add('hidden');
+                }, 5000);
+            }
+        });
 
-	<!-- Main JS -->
-	<script src="js/app.min.js "></script>
-	<script src="//localhost:35729/livereload.js"></script>
+    </script>
+
 </body>
 </html>
+
+
+
+
