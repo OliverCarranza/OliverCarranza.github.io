@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Policies | Oliver Carranza for Governor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles matched to index.html */
+        :root {
+            --wisconsin-green: #155724;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .text-green-primary {
+            color: var(--wisconsin-green);
+        }
+
+        .bg-green-primary {
+            background-color: var(--wisconsin-green);
+        }
+
+        .hover\:text-green-primary:hover {
+            color: var(--wisconsin-green);
+        }
+
+        /* Accordion Transitions */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        }
+
+        .accordion-button svg {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .accordion-button.open svg {
+            transform: rotate(180deg);
+        }
+        
+        /* Indentation for nested items */
+        .nested-accordion {
+            background-color: #f9fafb; /* Light gray for contrast */
+            border-left: 4px solid var(--wisconsin-green);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <header id="header" class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold bg-green-primary text-white px-3 py-1 rounded-md">Oliver Carranza</a>
+            
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-green-primary transition duration-300">Home</a>
+                <a href="#" class="text-green-primary font-bold transition duration-300">Policies</a> 
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="index.html" class="block text-gray-600 hover:text-green-primary">Home</a>
+            <a href="#" class="block text-green-primary font-bold">Policies</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section class="bg-white py-12 shadow-sm">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-green-primary mb-4">Policies</h1>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    A comprehensive strategic roadmap for Wisconsin. <br />Bridging the urban-rural divide through pragmatic, evidence-based solutions.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-12 bg-gray-50">
+            <div class="container mx-auto px-6 max-w-4xl">
+                
+                <div class="space-y-6">
+
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <h2 class="mb-0">
+                            <button type="button" class="accordion-button w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors" data-target="#policy-immigration">
+                                <span class="text-xl font-bold text-gray-800">Immigration & Integration</span>
+                                <svg class="w-6 h-6 text-green-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </h2>
+                        
+                        <div id="policy-immigration" class="accordion-content border-t border-gray-100">
+                            <div class="p-6 space-y-4">
+                                <p class="text-gray-600 mb-4">Moving from a posture of exclusion to one of pragmatic integration to secure our economic foundations.</p>
+                                
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-driver">
+                                        <span class="font-semibold text-green-primary">Standard Driver's Licenses</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-driver" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We support implementing a "Driving Privilege Card" or Standard License marked "Federal Limits Apply." This ensures all drivers are tested and insured, reduces hit-and-run accidents, and lowers insurance premiums for all Wisconsin residents by broadening the risk pool.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-tuition-equity">
+                                        <span class="font-semibold text-green-primary">Tuition Equity</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-tuition-equity" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will align Wisconsin with neighboring states by passing tuition equity legislation. This allows students who graduated from Wisconsin high schools to pay in-state tuition regardless of immigration status, retaining talent we have already educated in our K-12 system.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-farm-housing">
+                                        <span class="font-semibold text-green-primary">Rural Housing Development</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-farm-housing" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We support public-private partnerships providing grants or low-interest loans for farmers to upgrade on-farm housing or for developers to build workforce housing in rural counties, stabilizing the agricultural workforce.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-muni-ids">
+                                        <span class="font-semibold text-green-primary">Municipal ID Support</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-muni-ids" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We encourage the expansion of Municipal ID programs similar to those in Milwaukee and Madison. These allow residents to access city services, enter public buildings, and interact with local police effectively, fostering community safety and trust.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <h2 class="mb-0">
+                            <button type="button" class="accordion-button w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors" data-target="#policy-ai">
+                                <span class="text-xl font-bold text-gray-800">Artificial Intelligence & Future Infrastructure</span>
+                                <svg class="w-6 h-6 text-green-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </h2>
+                        
+                        <div id="policy-ai" class="accordion-content border-t border-gray-100">
+                            <div class="p-6 space-y-4">
+                                <p class="text-gray-600 mb-4">Managing the "Physical Paradox" of the digital economy to protect our resources.</p>
+                                
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-renewable-mandate">
+                                        <span class="font-semibold text-green-primary">70% Renewable Energy Mandate</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-renewable-mandate" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We support legislation requiring data centers to source 70% of their energy from renewable sources to qualify for state tax incentives.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-transparency">
+                                        <span class="font-semibold text-green-primary">Ending the NDA Culture</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-transparency" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We mandate public disclosure of water and energy usage data for large industrial developments, bypassing the culture of Non-Disclosure Agreements. Communities have a right to know how their aquifers and grids are being utilized.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-prevailing-wage">
+                                        <span class="font-semibold text-green-primary">Labor Standards</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-prevailing-wage" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We require the payment of prevailing wages for construction workers on major data center projects receiving state incentives, ensuring the construction boom supports Wisconsin families with high-quality jobs.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-sprawl">
+                                        <span class="font-semibold text-green-primary">Managing "Digital Sprawl"</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-sprawl" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will implement stricter oversight on the implementation of prime agricultural land for industrial use. We must balance economic development with the preservation of the fertile soil that supports our agricultural sector.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-gl-compact">
+                                        <span class="font-semibold text-green-primary">Protecting the Great Lakes</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-gl-compact" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will strictly scrutinize water diversion requests. The Great Lakes Compact is a vital legal framework, and we must ensure that industrial water withdrawals do not compromise the ecological integrity of the lakes.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <h2 class="mb-0">
+                            <button type="button" class="accordion-button w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors" data-target="#policy-economy">
+                                <span class="text-xl font-bold text-gray-800">Economic Growth & Labor Force</span>
+                                <svg class="w-6 h-6 text-green-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </h2>
+                        
+                        <div id="policy-economy" class="accordion-content border-t border-gray-100">
+                            <div class="p-6 space-y-4">
+                                <p class="text-gray-600 mb-4">Unlocking the economic potential of all residents and securing our critical industries.</p>
+                                
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-brain-waste">
+                                        <span class="font-semibold text-green-primary">Eliminating "Brain Waste"</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-brain-waste" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will streamline credentialing for foreign-trained professionals, ensuring that engineers, doctors, and teachers already living in Wisconsin can work in their fields of expertise rather than low-skilled positions.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-resilience">
+                                        <span class="font-semibold text-green-primary">Rural Resilience Fund</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-resilience" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will reframe state aid as infrastructure investment by creating a "Rural Resilience Fund." This fund, supported by a dedicated portion of shared revenue, will finance rural fire, EMS, and broadband districts. Treating them as essential economic infrastructure, because they are.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-sales-tax">
+                                        <span class="font-semibold text-green-primary">Rethinking Tax Exemptions</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-sales-tax" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will review and reform sales tax exemptions for hyperscale data centers. While we welcome investment, we must ensure that the cost per job created is reasonable and that the state is not forfeiting revenue needed for schools and roads.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-apprenticeships">
+                                        <span class="font-semibold text-green-primary">Apprenticeship Expansion</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-apprenticeships" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will invest in apprenticeship programs in high-demand fields like advanced manufacturing, renewable energy installation, and healthcare, connecting education directly to employment.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-small-biz">
+                                        <span class="font-semibold text-green-primary">Small Business Focus</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-small-biz" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will prioritize targeted tax relief and grant programs for main street small businesses over massive subsidies for out-of-state corporations, ensuring money circulates within our local communities.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <h2 class="mb-0">
+                            <button type="button" class="accordion-button w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors" data-target="#policy-env">
+                                <span class="text-xl font-bold text-gray-800">Environment & Clean Water</span>
+                                <svg class="w-6 h-6 text-green-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </h2>
+                        
+                        <div id="policy-env" class="accordion-content border-t border-gray-100">
+                            <div class="p-6 space-y-4">
+                                <p class="text-gray-600 mb-4">Protecting our resources through regulatory reform and innovation.</p>
+                                
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-reins-reform">
+                                        <span class="font-semibold text-green-primary">REINS Act Reform</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-reins-reform" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We must reform the REINS Act to allow the DNR to effectively regulate nitrate and PFAS contamination. The current regulatory gridlock prevents the state from addressing modern environmental threats that affect rural drinking water.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-nitrates">
+                                        <span class="font-semibold text-green-primary">Nitrate Reduction Strategy</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-nitrates" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will address widespread nitrate contamination by expanding grant programs for nitrogen optimization and cover crop insurance.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-community-solar">
+                                        <span class="font-semibold text-green-primary">Community Solar Expansion</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-community-solar" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We support legislation enabling third-party ownership of community solar projects. This allows local residents to subscribe to smaller, distributed arrays (1-5 MW) for bill credits, bypassing the need for massive, controversial utility-scale projects.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <h2 class="mb-0">
+                            <button type="button" class="accordion-button w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors" data-target="#policy-health">
+                                <span class="text-xl font-bold text-gray-800">Healthcare & Social Safety Net</span>
+                                <svg class="w-6 h-6 text-green-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </h2>
+                        
+                        <div id="policy-health" class="accordion-content border-t border-gray-100">
+                            <div class="p-6 space-y-4">
+                                <p class="text-gray-600 mb-4">Strengthening our care economy and protecting the most vulnerable.</p>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-veterans">
+                                        <span class="font-semibold text-green-primary">Veteran Housing Restoration</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-veterans" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will immediately increase funding for the Veteran Housing and Recovery Program (VHRP) and other Veteran Programs to reopen critical facilities such as the VHRP facilities in Green Bay and Chippewa Falls that were closed due to budget cuts.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-preventative">
+                                        <span class="font-semibold text-green-primary">Pregnancy Care Expansion</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-preventative" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We support direct funding to Federally Qualified Health Centers and covering prenatal and postpartum care for all women. This measure reduces emergency room dependency and ensures healthy births and healthy mother recoveries.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-mental">
+                                        <span class="font-semibold text-green-primary">Farmer Mental Health</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-mental" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will support community-led initiatives like the Farmer Angel Network and provide vouchers for counseling to address the unique stressors and suicide rates in the agricultural community. If we take care of our farmers', we take care of Wisconsin.
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-mobile-health">
+                                        <span class="font-semibold text-green-primary">Mobile Integrated Health</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-mobile-health" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will authorize a pilot program for mobile integrated health units in rural counties. Modeled on Tennessee's Project Rural Recovery, these units bring primary care and mental health assessments directly to residents who lack transportation.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <h2 class="mb-0">
+                            <button type="button" class="accordion-button w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors" data-target="#policy-edu">
+                                <span class="text-xl font-bold text-gray-800">Education Excellence</span>
+                                <svg class="w-6 h-6 text-green-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </h2>
+                        
+                        <div id="policy-edu" class="accordion-content border-t border-gray-100">
+                            <div class="p-6 space-y-4">
+                                <p class="text-gray-600 mb-4">Invest in our future by ensuring funding parity and access.</p>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-tuition">
+                                        <span class="font-semibold text-green-primary">Tuition Equity</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-tuition" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will allow undocumented students who have grown up in Wisconsin to pay in-state tuition rates at our public universities and technical colleges, ensuring we do not lose their talent to neighboring states.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-teacher-pay">
+                                        <span class="font-semibold text-green-primary">Teacher Retention & Pay</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-teacher-pay" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We must increase teacher pay to attract and retain the best educators in the region. We cannot expect high-quality education outcomes if we cannot compete with the salaries offered in neighboring states.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-literacy">
+                                        <span class="font-semibold text-green-primary">Literacy Funding (Act 20)</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-literacy" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We support the shift to science-based reading instruction, but we must fully fund the implementation of Act 20. Schools cannot be expected to overhaul curricula and retrain staff without the necessary financial resources.
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                        <h2 class="mb-0">
+                            <button type="button" class="accordion-button w-full px-6 py-5 flex items-center justify-between bg-white hover:bg-gray-50 transition-colors" data-target="#policy-housing">
+                                <span class="text-xl font-bold text-gray-800">Housing & Homelessness</span>
+                                <svg class="w-6 h-6 text-green-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                            </button>
+                        </h2>
+                        
+                        <div id="policy-housing" class="accordion-content border-t border-gray-100">
+                            <div class="p-6 space-y-4">
+                                <p class="text-gray-600 mb-4">Ensuring dignified housing and stable communities across the state.</p>
+
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-homelessness">
+                                        <span class="font-semibold text-green-primary">Homelessness Aid</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-homelessness" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            We will enact a "Wisconsin Homeless Aid" statute, giving more aid to non-profits and organizations that provide services for the homeless or low-income Wisconsinites.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nested-accordion rounded-lg overflow-hidden">
+                                    <button type="button" class="accordion-button w-full px-5 py-3 flex items-center justify-between text-left hover:bg-gray-100" data-target="#sub-mobile-services">
+                                        <span class="font-semibold text-green-primary">Mobile Rural Services</span>
+                                        <svg class="w-5 h-5 text-gray-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                    </button>
+                                    <div id="sub-mobile-services" class="accordion-content">
+                                        <div class="p-5 text-gray-700 bg-white border-t border-gray-200">
+                                            To address rural "care deserts," we will fund mobile integrated health and case management units. These mobile teams will travel to rural counties to provide services directly.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="bg-gray-800 text-white mt-auto">
+        <div class="container mx-auto py-12 px-6">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0 flex flex-col gap-2">
+                    <a href="#" class="text-2xl font-bold bg-white text-green-primary px-3 py-1 rounded-md w-max">Oliver for Wisconsin</a>
+                    <a href="mailto:carranzaforgov@gmail.com" class="text-sm text-gray-300 hover:text-white">carranzaforgov@gmail.com</a>
+                </div>
+                <div class="grid grid-cols-1 gap-8">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold uppercase">Quick Links</h2>
+                        <ul class="text-gray-400">
+                            <li class="mb-2"><a href="index.html" class="hover:underline">Home</a></li>
+                            <li class="mb-2"><a href="#" class="hover:underline text-white">Policies</a></li>
+                            <li><a href="feedback.html" class="hover:underline">Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-700 sm:mx-auto lg:my-8" />
+            <span class="text-sm text-gray-400">Oliver for all, all for Oliver &copy; 2025</span>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Logic
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if(mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Updated Accordion Logic for Nested Support
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.stopPropagation(); 
+
+                const targetId = this.getAttribute('data-target');
+                const content = document.querySelector(targetId);
+                
+                // Toggle current icon rotation
+                this.classList.toggle('open');
+
+                // Toggle Content Height
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+                
+                // Recalculate parent height for nested items
+                let parentContent = this.closest('.accordion-content');
+                while (parentContent) {
+                    if (parentContent.style.maxHeight) {
+                        parentContent.style.maxHeight = parentContent.scrollHeight + content.scrollHeight + "px";
+                    }
+                    parentContent = parentContent.parentElement.closest('.accordion-content');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
